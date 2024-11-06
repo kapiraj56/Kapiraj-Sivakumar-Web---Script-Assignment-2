@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"> 
+<body>
+    <!-- adding a wrapper class so we can make all the information fit in the page -->
+    <div class="wrapper">
+        <!-- setting up the navbar so the users can access the different parts of the website -->
+    <nav class="navbar"> 
+        <!-- added a picure in the nav bar to make it look more better -->
+    <img src="/assets/image/Kapi.png" width="100px" height="100px">
+    <!-- here is a list of directories users can choose to go to on the navagation bar -->
+    </div>
+
+    </nav>
+    <!-- adding a wrapper class so we can make all the information fit in the page -->
+    <div class="wrapper">
+
+    <main>
+        <h3>Contact Me Page</h3>
+        <p>If you have any questions or would like to schedule a meeting with Kapiraj Sivakumar, please fill out the form below, and we will get back to you as soon as possible.</p>
+
+    </div>
+    </main>
+    <!-- here I gave creates a part in the website where users can email me with questions and concerns and I have added rules that will make sure users complete all requirment and if not it will not let them send -->
+    <div class="Contact">
+        <h1>Contact Me</h1>
+        <!-- the hyper link will open mail up when sucessfully sending email on interface -->
+        <form id="Contact Me Form"  method="post" action="mailto:kapiraj.sivakumar@ontariotechu.net">
+            <label for="name"> Name </label>
+            <!-- created a text box for users to enter their name and added a pattern so users enter name properly -->
+            <input type="text" id="name" name="name" placeholder="Your Name" required pattern="[A-Za-z\s]+" required>
+            <label for="email"> Email </label>
+            <!-- created a text box for users to add there email and added a pattern so email is entered properly -->
+            <input type="text" id="email" name="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <label for="Phone Number"> Phone Number </label>
+            <!-- added a text for users to enter phone number and added a pattern so number is entered correctly -->
+            <input type="text" id="name" name="phone number" placeholder="Phone Number" pattern="\d{3}\d{3}\d{4}" required>
+            <label for="Message"> Message</label>
+            <!-- added a text box so users can enter questions and concerns and added a min and max lenght the message has to be-->
+            <textarea id="text" name="message" placeholder="Write a Message from 5 characters up to 3000 characters" style="height: 200px" minlength="5" maxlength="3000"></textarea>
+            <!-- added a submit button so users can send it to me -->
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+</body>
+
+</html>
